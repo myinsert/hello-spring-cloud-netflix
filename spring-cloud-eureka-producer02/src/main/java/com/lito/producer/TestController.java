@@ -25,7 +25,7 @@ public class TestController {
      */
     @RequestMapping(value = "sayHi", method = RequestMethod.GET)
     public String sayHi(@RequestParam(value = "message") String message) {
-        return String.format("Hi，your message is : %s i am producer from port : %s", message, port);
+        return String.format("Hi，your message is : %s i am producer from port : %s  dateTime %s", message, port,System.currentTimeMillis());
     }
 
 }
