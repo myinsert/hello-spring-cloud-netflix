@@ -17,6 +17,6 @@ public class FeignApiFallBack implements FeignApi {
 
     @Override
     public String sayHi(String message) {
-        return String.format("Hi，your message is : %s i am from port : %s", message,port);
+        return String.format("Hi，your message is : %s i am consumer from port : %s", message,port);
     }
 }

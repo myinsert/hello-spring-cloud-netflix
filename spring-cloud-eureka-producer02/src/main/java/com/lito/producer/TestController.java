@@ -1,4 +1,4 @@
-package com.lito.producer02;
+package com.lito.producer;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -25,7 +25,7 @@ public class TestController {
      */
     @RequestMapping(value = "sayHi", method = RequestMethod.GET)
     public String sayHi(@RequestParam(value = "message") String message) {
-        return String.format("Hi，your message is : %s i am from port : %s", message, port);
+        return String.format("Hi，your message is : %s i am producer from port : %s", message, port);
     }
 
 }
