@@ -10,15 +10,10 @@ spring:
       server:
         git:
           # 仓库地址
-          uri: https://github.com/myinsert/spring-cloud-config-warehouse
-          # Git 的分支
-          default-label: master
+          uri: https://github.com/myinsert/hello-spring-cloud-netflix
           # 仓库文件夹名称，多个以逗号分隔
-          search-paths:
-          # git 仓库用户名（公开库可以不用填写
-          username:
-          # git 仓库密码（公开库可以不用填写）
-          password:
+          search-paths: /**
+          default-label: master
 
 eureka:
   client:
