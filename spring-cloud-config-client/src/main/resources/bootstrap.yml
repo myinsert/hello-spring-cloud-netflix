@@ -1,0 +1,9 @@
+spring:
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: hello-spring-cloud-config-server
+      # 需要从git上读取的资源名称，不要后缀
+      name: config-dev
+

@@ -1,5 +1,5 @@
 server:
-  port: 8760
+  port: 8771
 
 spring:
   application:
@@ -9,11 +9,9 @@ spring:
     config:
       server:
         git:
-          # 仓库地址
-          uri: https://github.com/myinsert/hello-spring-cloud-netflix
-          # 仓库文件夹名称，多个以逗号分隔
-          search-paths: /**
+          uri: https://github.com/myinsert/hello-spring-cloud-netflix.git
           default-label: master
+          search-paths: /spring-cloud-config-warehouse/config-repo
 
 eureka:
   client:
